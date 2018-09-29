@@ -25,9 +25,9 @@
     DWORD dwTeam = 0xF0;
     DWORD dwDormant = 0xE9;
 	DWORD dwFlags = 0x100;
-	DWORD m_iShotsFired = 0xA2B0;
+	DWORD m_iShotsFired = 0xA2C0;
 	DWORD m_aimPunchAngle = 0x301C;
-	DWORD m_iCrosshairId = 0xB2A4;
+	DWORD m_iCrosshairId = 0xB2B8;
 	DWORD m_lifeState = 0x25B;
 	DWORD DwEntitySize = 0x10;
 
@@ -84,7 +84,7 @@
     /* Get Pointer To Client.dll*/
     PModule* GetClientModule() {
     	if (modClient.dwBase == 0 && modClient.dwSize == 0) {
-    		modClient = memory.GetModule("client.dll");
+    		modClient = memory.GetModule("client_panorama.dll");
     	}
     	return &modClient;
     }
@@ -158,7 +158,7 @@
     public:
     	static void get_offset(process* m) {
     		mem = m;
-    		modClient = mem->GetModule("client.dll");
+    		modClient = mem->GetModule("client_panorama.dll");
 			modEngine = mem->GetModule("engine.dll");
 			update_local_player();
     		update_entity_list();
