@@ -22,13 +22,13 @@
 	DWORD dwClientState;
 	DWORD dwClientState_state;
      
-    DWORD dwTeam = 0xF0;
-    DWORD dwDormant = 0xE9;
-	DWORD dwFlags = 0x100;
-	DWORD m_iShotsFired = 0xA2C0;
-	DWORD m_aimPunchAngle = 0x301C;
-	DWORD m_iCrosshairId = 0xB2B8;
-	DWORD m_lifeState = 0x25B;
+    DWORD dwTeam = 0xF4;
+    DWORD dwDormant = 0xED;
+	DWORD dwFlags = 0x104;
+	DWORD m_iShotsFired = 0xA370;
+	DWORD m_aimPunchAngle = 0x302C;
+	DWORD m_iCrosshairId = 0xB390;
+	DWORD m_lifeState = 0x25F;
 	DWORD DwEntitySize = 0x10;
 
     /* Glow Object structure in csgo */
